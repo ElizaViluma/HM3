@@ -11,18 +11,16 @@
 <body>
     <div class="rev-style-heading"><h1>FizzBuzz</h1></div>
     <div class="rev-style">
-        <div class="rev-style-headingB">Try the "FizzBuzz" game! </div>
+        <div class="rev-style-headingB">Try the FizzBuzz game! </div>
     </hr>
         <label><span>Fizz number:</span><input id="Fizzvalue" type="number" name="fizz" value="3"></label>
         <label><span>Buzz number:</span><input id="Buzzvalue" type="number" name="buzz" value="5"></label>
-        <label><span></span><input onclick="buzzItTemplate()" type="submit" value="Buzz It" /></label>
+        <label><span></span><input onclick="buzzItTemplate()" type="submit" value="Start" /></label>
         <div style="overflow-x:auto;">
-            <table id="results"></table>                 
-                     <!--Generated Results go here-->                                      
+            <table id="results"></table>                                                     
             </table>
         </div>
     </div>
-    <!--Templates for displaying output-->
     <script id="template-header" type="text/template">
         <thead>
              <tr><th colspan="5">Results for Fizz Buzz</th></tr>    
