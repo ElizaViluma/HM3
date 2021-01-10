@@ -4,18 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>How to FizzBuzz</title>
+    <title>How to FizzBuzz the Meta Strat</title>
     <script src="fizzbuzz.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <div class="rev-style-heading"><h1>FizzBuzz</h1></div>
     <div class="rev-style">
-        <div class="rev-style-headingB">Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".</div>
-        <label><span>Enter a number:</span><input id="Fizzvalue" type="number" name="fizz" value="3"></label>
-        <label><span>Enter another number:</span><input id="Buzzvalue" type="number" name="buzz" value="5"></label>
-        <label><span></span><input onclick="buzzIt()" type="submit" value="Buzz It" /></label>
-        <label><span>Results:</span></label><br/>
-        <p id="results" ></p>
+        <div class="rev-style-headingB">Try the "FizzBuzz" game! </div>
+    </hr>
+        <label><span>Fizz number:</span><input id="Fizzvalue" type="number" name="fizz" value="3"></label>
+        <label><span>Buzz number:</span><input id="Buzzvalue" type="number" name="buzz" value="5"></label>
+        <label><span></span><input onclick="buzzItTemplate()" type="submit" value="Buzz It" /></label>
+        <div style="overflow-x:auto;">
+            <table id="results"></table>                 
+                     <!--Generated Results go here-->                                      
+            </table>
+        </div>
     </div>
-</body>
+    <!--Templates for displaying output-->
+    <script id="template-header" type="text/template">
+        <thead>
+             <tr><th colspan="5">Results for Fizz Buzz</th></tr>    
+        </thead>    
+    </script>    
+    <script id="template-row-items" type="text/template">
+        <tr>
+            <td>{{val1}}</td><td>{{val2}}</td><td>{{val3}}</td><td>{{val4}}</td><td>{{val5}}</td>
+        </tr>    
+    </script>
+    <footer><div class="rev-style-headingC">Riga, 2020</div></footer>
+</body>    
 </html>
